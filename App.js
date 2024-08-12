@@ -8,8 +8,13 @@ const heading = React.createElement(
   );
 
  const jsxHeading = <h1>It is jsx</h1>
-
+ const Component = () => (
+  <div>
+    {jsxHeading}
+    <h1>It's a headings</h1>
+  </div>
+ );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(jsxHeading)
+root.render(<Component/>)
