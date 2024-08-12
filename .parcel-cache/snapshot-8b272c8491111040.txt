@@ -1,4 +1,5 @@
-5966
+5971
+36/home/dell/Namaste React/day1/assets1723476102202464713 1
 56/home/dell/Namaste React/day1/dist/index.7826abd7.js.map1723443960081408344 0
 57/home/dell/Namaste React/day1/dist/index.9e4c6fd2.css.map1723443960081408344 0
 53/home/dell/Namaste React/day1/dist/index.9e4c6fd2.css1723443960073405811 0
@@ -966,6 +967,7 @@
 83/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/es6-module.js1723220393614159484 0
 125/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-htmlnano/node_modules/css-select/lib/pseudo-selectors/pseudos.js1723220392518026231 0
 107/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/dist/csstree.min.js1723220392638040835 0
+50/home/dell/Namaste React/day1/assets/biriyani.jpeg1723478173309772886 0
 93/home/dell/Namaste React/day1/node_modules/@parcel/node-resolver-core/lib/builtins.browser.js1723220395622402997 0
 80/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/streams.js1723220394078215842 0
 72/home/dell/Namaste React/day1/node_modules/css-select/lib/esm/general.js1723220393018087074 0
@@ -1671,6 +1673,7 @@
 118/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/atrule/font-face.js1723220392654042781 0
 84/home/dell/Namaste React/day1/node_modules/@parcel/reporter-dev-server/src/Server.js1723220398754781230 0
 88/home/dell/Namaste React/day1/node_modules/csso/node_modules/css-tree/lib/utils/clone.js1723220398686773036 0
+45/home/dell/Namaste React/day1/assets/logo.png1723476109446443011 0
 87/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-htmlnano/node_modules/.bin1723220435219044930 1
 106/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/lexer/Lexer.js1723220392666044242 0
 87/home/dell/Namaste React/day1/node_modules/css-select/lib/pseudo-selectors/index.js.map1723220393050090962 0
@@ -2299,7 +2302,7 @@
 91/home/dell/Namaste React/day1/node_modules/csso/cjs/restructure/prepare/processSelector.cjs1723220392718050570 0
 61/home/dell/Namaste React/day1/node_modules/lmdb/src/lmdb-js.h1723220395098339543 0
 103/home/dell/Namaste React/day1/node_modules/@swc/helpers/_/_class_private_field_destructure/package.json1723220393494144905 0
-36/home/dell/Namaste React/day1/App.js1723444240584313334 0
+36/home/dell/Namaste React/day1/App.js1723480188340746136 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/UA.js1723220394106219238 0
 78/home/dell/Namaste React/day1/node_modules/@swc/helpers/src/_object_spread.mjs1723220393554152195 0
 80/home/dell/Namaste React/day1/node_modules/@swc/helpers/_/_sliced_to_array_loose1723220393522148307 1
@@ -2409,6 +2412,7 @@
 90/home/dell/Namaste React/day1/node_modules/@parcel/core/lib/requests/WriteBundleRequest.js1723220400771023665 0
 92/home/dell/Namaste React/day1/node_modules/@parcel/package-manager/src/NodePackageManager.js1723220400699015017 0
 71/home/dell/Namaste React/day1/node_modules/chrome-trace-event/README.md1723220392434016009 0
+57/home/dell/Namaste React/day1/dist/biriyani.3a06bcb7.jpeg1723478243787091630 0
 79/home/dell/Namaste React/day1/node_modules/css-tree/lib/syntax/node/Brackets.js1723220394102218753 0
 92/home/dell/Namaste React/day1/node_modules/css-select/node_modules/domutils/lib/traversal.js1723220399022813522 0
 78/home/dell/Namaste React/day1/node_modules/css-select/lib/esm/general.d.ts.map1723220393034089018 0
@@ -5198,6 +5202,7 @@
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/DK.js1723220393606158512 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/KR.js1723220393934198362 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/IR.js1723220393906194960 0
+52/home/dell/Namaste React/day1/dist/logo.f0c67fd0.png1723476199886288971 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/ME.js1723220393942199334 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/NL.js1723220393950200306 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/SC.js1723220393966202250 0
@@ -5946,7 +5951,7 @@
 103/home/dell/Namaste React/day1/node_modules/csso/node_modules/css-tree/lib/syntax/node/index-generate.js1723220398746780266 0
 87/home/dell/Namaste React/day1/node_modules/css-tree/cjs/syntax/node/DeclarationList.cjs1723220393226112345 0
 64/home/dell/Namaste React/day1/node_modules/js-yaml/lib/schema.js1723220392582034020 0
-39/home/dell/Namaste React/day1/index.css1723187680947860588 0
+39/home/dell/Namaste React/day1/index.css1723480160403782535 0
 69/home/dell/Namaste React/day1/node_modules/js-yaml/lib/schema/json.js1723220392570032559 0
 69/home/dell/Namaste React/day1/node_modules/js-yaml/lib/schema/core.js1723220392470020390 0
 72/home/dell/Namaste React/day1/node_modules/@mischnic/json-sourcemap/dist1723220396382494955 1
