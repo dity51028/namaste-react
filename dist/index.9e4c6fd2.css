@@ -1,4 +1,42 @@
-#heading {
-  color: #639;
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-items ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items ul li {
+  margin: 10px;
+  padding: 10px;
+}
+
+.res-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.card-container {
+  border: 1px solid #000;
+  width: 200px;
+  height: 500px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.card-container:hover {
+  cursor: pointer;
+  background-color: #c5cdcd;
+}
+
+.img {
+  width: 100%;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
