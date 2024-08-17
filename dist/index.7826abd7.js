@@ -3030,7 +3030,7 @@ const Header = ()=>{
     }, undefined);
 };
 _c = Header;
-const CardContainer = ()=>{
+const CardContainer = ({ resName, cuisine, time, price })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card-container",
         children: [
@@ -3043,28 +3043,28 @@ const CardContainer = ()=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Aminia"
+                children: resName
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 31,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "North Indian, Biriyani"
+                children: cuisine
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 32,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
-                children: "30min"
+                children: time
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 33,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
-                children: "500 for two"
+                children: price
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 34,
@@ -3092,54 +3092,34 @@ const Body = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {
+                        resName: "Aminia",
+                        cuisine: "North Indian, Biriyani",
+                        time: "30 min",
+                        price: "600 for two"
+                    }, void 0, false, {
                         fileName: "App.js",
                         lineNumber: 45,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 46,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 47,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 48,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 49,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {
+                        resName: "Arsalan",
+                        cuisine: "kebabs, Biriyani",
+                        time: "32 min",
+                        price: "700 for two"
+                    }, void 0, false, {
                         fileName: "App.js",
                         lineNumber: 50,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {
+                        resName: "kfc",
+                        cuisine: "snacks, colddrinks",
+                        time: "45 min",
+                        price: "500 for two"
+                    }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 51,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CardContainer, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 54,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -3162,19 +3142,19 @@ const AppALayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 66,
+                lineNumber: 72,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 67,
+                lineNumber: 73,
                 columnNumber: 7
             }, undefined),
             "/**footer */"
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 64,
+        lineNumber: 70,
         columnNumber: 5
     }, undefined);
 };
@@ -3182,7 +3162,7 @@ _c3 = AppALayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppALayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 76,
+    lineNumber: 82,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;

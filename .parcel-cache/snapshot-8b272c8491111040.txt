@@ -1,17 +1,11 @@
 5971
-36/home/dell/Namaste React/day1/assets1723476102202464713 1
-56/home/dell/Namaste React/day1/dist/index.7826abd7.js.map1723443960081408344 0
-57/home/dell/Namaste React/day1/dist/index.9e4c6fd2.css.map1723443960081408344 0
-53/home/dell/Namaste React/day1/dist/index.9e4c6fd2.css1723443960073405811 0
-45/home/dell/Namaste React/day1/dist/index.html1723443960073405811 0
-60/home/dell/Namaste React/day1/node_modules/process/.eslintrc1723443958628945522 0
-59/home/dell/Namaste React/day1/node_modules/process/index.js1723443958628945522 0
-61/home/dell/Namaste React/day1/node_modules/process/browser.js1723443958628945522 0
-58/home/dell/Namaste React/day1/node_modules/process/LICENSE1723443958628945522 0
-60/home/dell/Namaste React/day1/node_modules/process/README.md1723443958624944242 0
-50/home/dell/Namaste React/day1/node_modules/process1723443958588932715 1
 47/home/dell/Namaste React/day1/package-lock.json1723443958728977540 0
 39/home/dell/Namaste React/day1/README.md1723273912161417728 0
+45/home/dell/Namaste React/day1/dist/index.html1723478243903093764 0
+53/home/dell/Namaste React/day1/dist/index.9e4c6fd2.css1723480160427783371 0
+57/home/dell/Namaste React/day1/dist/index.9e4c6fd2.css.map1723480160431783511 0
+56/home/dell/Namaste React/day1/dist/index.7826abd7.js.map1723480188540752970 0
+36/home/dell/Namaste React/day1/assets1723478192930144571 1
 40/home/dell/Namaste React/day1/index.html1723443303696057461 0
 72/home/dell/Namaste React/day1/node_modules/weak-lru-cache/LRFUExpirer.js1723220392650042294 0
 62/home/dell/Namaste React/day1/node_modules/weak-lru-cache/dist1723220392646041808 1
@@ -519,6 +513,13 @@
 94/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/has-flag/package.json1723220392394011141 0
 81/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/has-flag1723220392414013575 1
 101/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/conversions.js1723220392418014062 0
+95/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/route.js1723220392466019903 0
+94/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/LICENSE1723220392454018443 0
+99/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/package.json1723220392394011141 0
+99/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/CHANGELOG.md1723220392402012115 0
+86/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert1723220392462019417 1
+71/home/dell/Namaste React/day1/node_modules/@swc/helpers/_/_to_primitive1723220393526148793 1
+72/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules1723220388137491324 1
 103/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/data/patch.json1723220392682046189 0
 84/home/dell/Namaste React/day1/node_modules/csso/lib/restructure/8-restructRuleset.js1723220392730052030 0
 100/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/package.json1723220392682046189 0
@@ -531,6 +532,8 @@
 78/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/audio.js1723220393354127896 0
 88/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/.bin/svgo1723220435219044930 0
 77/home/dell/Namaste React/day1/node_modules/@parcel/utils/src/openInBrowser.js1723220398890797618 0
+95/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/index.js1723220392450017956 0
+112/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/css/at-rules.schema.json1723220392486022337 0
 86/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/border-radius.js1723220393366129354 0
 102/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/css/types.json1723220392590034993 0
 105/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/css/at-rules.json1723220392470020390 0
@@ -1020,7 +1023,6 @@
 95/home/dell/Namaste React/day1/node_modules/@swc/helpers/cjs/_class_private_field_loose_base.cjs1723220393450139560 0
 61/home/dell/Namaste React/day1/node_modules/is-json/.npmignore1723220392618038401 0
 75/home/dell/Namaste React/day1/node_modules/css-tree/cjs/tokenizer/index.cjs1723220393614159484 0
-95/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/route.js1723220392466019903 0
 72/home/dell/Namaste React/day1/node_modules/@parcel/profiler/src/types.js1723220395074336637 0
 84/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/input-event.js1723220393894193502 0
 67/home/dell/Namaste React/day1/node_modules/@parcel/profiler/LICENSE1723220395070336152 0
@@ -1993,7 +1995,7 @@
 94/home/dell/Namaste React/day1/node_modules/css-select/node_modules/entities/lib/esm/index.d.ts1723220400054937667 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/RW.js1723220393966202250 0
 81/home/dell/Namaste React/day1/node_modules/css-select/node_modules/dom-serializer1723220398882796654 1
-60/home/dell/Namaste React/day1/node_modules/@msgpackr-extract1723441750037699767 1
+60/home/dell/Namaste React/day1/node_modules/@msgpackr-extract1723443958636948084 1
 107/home/dell/Namaste React/day1/node_modules/csso/node_modules/css-tree/cjs/definition-syntax/SyntaxError.cjs1723220398682772554 0
 87/home/dell/Namaste React/day1/node_modules/@parcel/utils/src/replaceBundleReferences.js1723220398894798100 0
 105/home/dell/Namaste React/day1/node_modules/css-select/node_modules/entities/lib/esm/decode_codepoint.d.ts1723220400054937667 0
@@ -2159,7 +2161,7 @@
 87/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/serviceworkers.js1723220393966202250 0
 69/home/dell/Namaste React/day1/node_modules/node-releases/package.json1723220392454018443 0
 99/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/lib/svgo.js1723220392662043755 0
-50/home/dell/Namaste React/day1/node_modules/@parcel1723441750037699767 1
+50/home/dell/Namaste React/day1/node_modules/@parcel1723443958636948084 1
 81/home/dell/Namaste React/day1/node_modules/csso/cjs/replace/AttributeSelector.cjs1723220392574033046 0
 90/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/css-marker-pseudo.js1723220393574154625 0
 84/home/dell/Namaste React/day1/node_modules/@parcel/transformer-posthtml/package.json1723220396014450465 0
@@ -2217,6 +2219,8 @@
 103/home/dell/Namaste React/day1/node_modules/csso/node_modules/css-tree/lib/syntax/scope/atrulePrelude.js1723220398686773036 0
 76/home/dell/Namaste React/day1/node_modules/@swc/helpers/esm/_ts_generator.js1723220393482143447 0
 51/home/dell/Namaste React/day1/node_modules/domutils1723220392538028665 1
+72/home/dell/Namaste React/day1/node_modules/@babel/highlight/package.json1723220392462019417 0
+93/home/dell/Namaste React/day1/node_modules/@parcel/transformer-babel/src/remapAstLocations.js1723220397154588259 0
 68/home/dell/Namaste React/day1/node_modules/csso/lib/replace/index.js1723220394750297351 0
 74/home/dell/Namaste React/day1/node_modules/css-tree/cjs/syntax/node/common1723220393226112345 1
 54/home/dell/Namaste React/day1/node_modules/detect-libc1723220393250115261 1
@@ -2234,6 +2238,7 @@
 80/home/dell/Namaste React/day1/node_modules/@parcel/runtime-js/lib/helpers/worker1723220397486628331 1
 81/home/dell/Namaste React/day1/node_modules/node-releases/data/processed/envs.json1723220392450017956 0
 70/home/dell/Namaste React/day1/node_modules/cosmiconfig/dist/loaders.js1723220393098096794 0
+58/home/dell/Namaste React/day1/node_modules/process/LICENSE1723443958628945522 0
 96/home/dell/Namaste React/day1/node_modules/css-select/node_modules/domutils/lib/esm/traversal.js1723220399022813522 0
 100/home/dell/Namaste React/day1/node_modules/csso/node_modules/css-tree/cjs/definition-syntax/walk.cjs1723220398686773036 0
 76/home/dell/Namaste React/day1/node_modules/@parcel/workers/lib/childState.js1723220396650527355 0
@@ -2302,7 +2307,7 @@
 91/home/dell/Namaste React/day1/node_modules/csso/cjs/restructure/prepare/processSelector.cjs1723220392718050570 0
 61/home/dell/Namaste React/day1/node_modules/lmdb/src/lmdb-js.h1723220395098339543 0
 103/home/dell/Namaste React/day1/node_modules/@swc/helpers/_/_class_private_field_destructure/package.json1723220393494144905 0
-36/home/dell/Namaste React/day1/App.js1723480188340746136 0
+36/home/dell/Namaste React/day1/App.js1723530363993611779 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/UA.js1723220394106219238 0
 78/home/dell/Namaste React/day1/node_modules/@swc/helpers/src/_object_spread.mjs1723220393554152195 0
 80/home/dell/Namaste React/day1/node_modules/@swc/helpers/_/_sliced_to_array_loose1723220393522148307 1
@@ -2311,7 +2316,6 @@
 91/home/dell/Namaste React/day1/node_modules/css-select/lib/pseudo-selectors/aliases.d.ts.map1723220393026088047 0
 107/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/dist/csstree.js1723220392618038401 0
 73/home/dell/Namaste React/day1/node_modules/nth-check/lib/esm/parse.js.map1723220392542029152 0
-86/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert1723220392462019417 1
 79/home/dell/Namaste React/day1/node_modules/node-addon-api/tools/clang-format.js1723220392870069067 0
 65/home/dell/Namaste React/day1/node_modules/@swc/core/package.json1723220394422257567 0
 71/home/dell/Namaste React/day1/node_modules/nth-check/lib/esm/compile.js1723220392430015522 0
@@ -2345,7 +2349,7 @@
 85/home/dell/Namaste React/day1/node_modules/css-select/node_modules/dom-serializer/lib1723220398886797136 1
 72/home/dell/Namaste React/day1/node_modules/@parcel/profiler/src/Trace.js1723220395074336637 0
 75/home/dell/Namaste React/day1/node_modules/nth-check/lib/esm/parse.d.ts.map1723220392538028665 0
-42/home/dell/Namaste React/day1/node_modules1723441750033699654 1
+42/home/dell/Namaste React/day1/node_modules1723443958636948084 1
 54/home/dell/Namaste React/day1/node_modules/cosmiconfig1723220393118099224 1
 88/home/dell/Namaste React/day1/node_modules/@parcel/packager-js/src/GlobalOutputFormat.js1723220396770541864 0
 77/home/dell/Namaste React/day1/node_modules/lines-and-columns/build/index.d.ts1723220392450017956 0
@@ -2393,7 +2397,7 @@
 101/home/dell/Namaste React/day1/node_modules/css-select/node_modules/domutils/lib/esm/querying.d.ts.map1723220399030814484 0
 99/home/dell/Namaste React/day1/node_modules/@swc/helpers/src/_class_apply_descriptor_destructure.mjs1723220393542150737 0
 79/home/dell/Namaste React/day1/node_modules/cosmiconfig/dist/ExplorerBase.js.map1723220393114098738 0
-29/home/dell/Namaste React/day11723443956152147841 1
+29/home/dell/Namaste React/day11723476102202464713 1
 75/home/dell/Namaste React/day1/node_modules/css-tree/lib/syntax/node/Rule.js1723220396622523970 0
 82/home/dell/Namaste React/day1/node_modules/csso/lib/replace/property/background.js1723220392738053004 0
 73/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/LICENSE1723220397098581500 0
@@ -2412,7 +2416,7 @@
 90/home/dell/Namaste React/day1/node_modules/@parcel/core/lib/requests/WriteBundleRequest.js1723220400771023665 0
 92/home/dell/Namaste React/day1/node_modules/@parcel/package-manager/src/NodePackageManager.js1723220400699015017 0
 71/home/dell/Namaste React/day1/node_modules/chrome-trace-event/README.md1723220392434016009 0
-57/home/dell/Namaste React/day1/dist/biriyani.3a06bcb7.jpeg1723478243787091630 0
+57/home/dell/Namaste React/day1/dist/biriyani.3a06bcb7.jpeg1723480131222756429 0
 79/home/dell/Namaste React/day1/node_modules/css-tree/lib/syntax/node/Brackets.js1723220394102218753 0
 92/home/dell/Namaste React/day1/node_modules/css-select/node_modules/domutils/lib/traversal.js1723220399022813522 0
 78/home/dell/Namaste React/day1/node_modules/css-select/lib/esm/general.d.ts.map1723220393034089018 0
@@ -2816,7 +2820,6 @@
 104/home/dell/Namaste React/day1/node_modules/csso/node_modules/css-tree/cjs/syntax/function/expression.cjs1723220398474747489 0
 93/home/dell/Namaste React/day1/node_modules/css-select/node_modules/entities/lib/esm/decode.js1723220399882916984 0
 70/home/dell/Namaste React/day1/node_modules/@parcel/transformer-raw/src1723220396422499791 1
-99/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/package.json1723220392394011141 0
 75/home/dell/Namaste React/day1/node_modules/@parcel/graph/test/Graph.test.js1723220395614402028 0
 96/home/dell/Namaste React/day1/node_modules/react-dom/cjs/react-dom-server.node.production.min.js1723391475741123603 0
 106/home/dell/Namaste React/day1/node_modules/@parcel/source-map/parcel_sourcemap_wasm/dist-node/package.json1723220395274360856 0
@@ -3325,6 +3328,7 @@
 108/home/dell/Namaste React/day1/node_modules/@swc/helpers/src/_class_check_private_static_field_descriptor.mjs1723220393542150737 0
 100/home/dell/Namaste React/day1/node_modules/@parcel/core/test/fixtures/duplicate-targets/package.json1723220400775024145 0
 79/home/dell/Namaste React/day1/node_modules/csso/node_modules/css-tree/lib/lexer1723220398762782194 1
+59/home/dell/Namaste React/day1/node_modules/process/index.js1723443958628945522 0
 88/home/dell/Namaste React/day1/node_modules/csso/node_modules/css-tree/lib/lexer/error.js1723220398742779784 0
 89/home/dell/Namaste React/day1/node_modules/@swc/helpers/src/_async_generator_delegate.mjs1723220393538150251 0
 113/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/atrule/page.js1723220392674045215 0
@@ -3555,8 +3559,8 @@
 93/home/dell/Namaste React/day1/node_modules/lmdb/dependencies/lmdb/libraries/liblmdb/COPYRIGHT1723220394438259507 0
 92/home/dell/Namaste React/day1/node_modules/htmlnano/lib/modules/normalizeAttributeValues.cjs1723220393842187185 0
 102/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax1723220392666044242 1
-58/home/dell/Namaste React/day1/node_modules/process/test.js1723443958628945522 0
 94/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/constraint-validation.js1723220393554152195 0
+58/home/dell/Namaste React/day1/node_modules/process/test.js1723443958628945522 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/GL.js1723220393882192044 0
 91/home/dell/Namaste React/day1/node_modules/@swc/helpers/src/_apply_decorated_descriptor.mjs1723220393534149765 0
 70/home/dell/Namaste React/day1/node_modules/node-addon-api/package.json1723220392870069067 0
@@ -3656,8 +3660,6 @@
 96/home/dell/Namaste React/day1/node_modules/posthtml/node_modules/posthtml-parser/dist/index.d.ts1723220399082820739 0
 110/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/tokenizer/utils.js1723220392682046189 0
 110/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/tokenizer/index.js1723220392666044242 0
-112/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/css/at-rules.schema.json1723220392486022337 0
-95/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/index.js1723220392450017956 0
 77/home/dell/Namaste React/day1/node_modules/css-tree/cjs/lexer/match-graph.cjs1723220393618159970 0
 126/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/tokenizer/char-code-definitions.js1723220392554030612 0
 56/home/dell/Namaste React/day1/node_modules/lmdb/write.js1723220395114341481 0
@@ -4106,6 +4108,7 @@
 71/home/dell/Namaste React/day1/node_modules/@parcel/packager-svg/LICENSE1723220396966565560 0
 67/home/dell/Namaste React/day1/node_modules/@parcel/packager-svg/src1723220396966565560 1
 67/home/dell/Namaste React/day1/node_modules/@parcel/packager-svg/lib1723220396966565560 1
+50/home/dell/Namaste React/day1/node_modules/process1723443958628945522 1
 80/home/dell/Namaste React/day1/node_modules/@parcel/reporter-cli/src/logLevels.js1723220398394737849 0
 83/home/dell/Namaste React/day1/node_modules/@parcel/reporter-dev-server/package.json1723220399346852501 0
 78/home/dell/Namaste React/day1/node_modules/@parcel/reporter-dev-server/LICENSE1723220398750780748 0
@@ -4233,7 +4236,7 @@
 79/home/dell/Namaste React/day1/node_modules/@parcel/transformer-babel/src/jsx.js1723220397154588259 0
 92/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/hardwareconcurrency.js1723220393886192531 0
 80/home/dell/Namaste React/day1/node_modules/svgo/plugins/removeEmptyContainers.js1723220395678409778 0
-47/home/dell/Namaste React/day1/node_modules/@swc1723441750033699654 1
+47/home/dell/Namaste React/day1/node_modules/@swc1723443958636948084 1
 108/home/dell/Namaste React/day1/node_modules/@parcel/transformer-react-refresh-wrap/src/helpers/.eslintrc.json1723220396294484317 0
 65/home/dell/Namaste React/day1/node_modules/@parcel/diagnostic/lib1723220399418861162 1
 85/home/dell/Namaste React/day1/node_modules/svgo/plugins/removeAttributesBySelector.js1723220395674409294 0
@@ -4466,6 +4469,10 @@
 59/home/dell/Namaste React/day1/node_modules/lmdb/src/env.cpp1723220395094339058 0
 68/home/dell/Namaste React/day1/node_modules/lmdb/src/v8-functions.cpp1723220395094339058 0
 63/home/dell/Namaste React/day1/node_modules/lmdb/src/lmdb-js.cpp1723220395094339058 0
+60/home/dell/Namaste React/day1/node_modules/process/.eslintrc1723443958628945522 0
+60/home/dell/Namaste React/day1/node_modules/process/README.md1723443958624944242 0
+79/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/mathml.js1723220393938198848 0
+61/home/dell/Namaste React/day1/node_modules/process/browser.js1723443958628945522 0
 77/home/dell/Namaste React/day1/node_modules/lightningcss-linux-x64-gnu/LICENSE1723220400054937667 0
 64/home/dell/Namaste React/day1/node_modules/get-port/package.json1723220397654648609 0
 56/home/dell/Namaste React/day1/node_modules/dotenv-expand1723220392418014062 1
@@ -4672,7 +4679,6 @@
 84/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/will-change.js1723220394118220693 0
 96/home/dell/Namaste React/day1/node_modules/@babel/helper-validator-identifier/lib/keyword.js.map1723220392482021850 0
 81/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/css-grid.js1723220393574154625 0
-79/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/mathml.js1723220393938198848 0
 86/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/pad-start-end.js1723220393954200792 0
 67/home/dell/Namaste React/day1/node_modules/css-select/lib/sort.d.ts1723220393098096794 0
 82/home/dell/Namaste React/day1/node_modules/htmlnano/lib/modules/removeComments.cjs1723220393842187185 0
@@ -4770,7 +4776,7 @@
 88/home/dell/Namaste React/day1/node_modules/@swc/helpers/_/_class_apply_descriptor_update1723220393490144420 1
 108/home/dell/Namaste React/day1/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/replace/color.js1723220392562031586 0
 82/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/maxlength.js1723220393938198848 0
-34/home/dell/Namaste React/day1/dist1723443960053399479 1
+34/home/dell/Namaste React/day1/dist1723480188544753106 1
 69/home/dell/Namaste React/day1/node_modules/mdn-data/css/at-rules.json1723220392634040347 0
 83/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/features/css-shapes.js1723220393590156568 0
 61/home/dell/Namaste React/day1/node_modules/htmlnano/index.mjs1723220394406255626 0
@@ -5202,7 +5208,7 @@
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/DK.js1723220393606158512 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/KR.js1723220393934198362 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/IR.js1723220393906194960 0
-52/home/dell/Namaste React/day1/dist/logo.f0c67fd0.png1723476199886288971 0
+52/home/dell/Namaste React/day1/dist/logo.f0c67fd0.png1723480131222756429 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/ME.js1723220393942199334 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/NL.js1723220393950200306 0
 74/home/dell/Namaste React/day1/node_modules/caniuse-lite/data/regions/SC.js1723220393966202250 0
@@ -5390,7 +5396,6 @@
 69/home/dell/Namaste React/day1/node_modules/htmlnano/docs/package.json1723220394246236219 0
 66/home/dell/Namaste React/day1/node_modules/@swc/core-linux-x64-gnu1723220392834064686 1
 61/home/dell/Namaste React/day1/node_modules/htmlnano/docs/docs1723220394250236704 1
-99/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/CHANGELOG.md1723220392402012115 0
 80/home/dell/Namaste React/day1/node_modules/@swc/helpers/src/_new_arrow_check.mjs1723220393554152195 0
 76/home/dell/Namaste React/day1/node_modules/htmlnano/docs/docs/050-modules.md1723220394250236704 0
 95/home/dell/Namaste React/day1/node_modules/scheduler/umd/scheduler-unstable_mock.development.js1723391475725122287 0
@@ -5402,7 +5407,7 @@
 79/home/dell/Namaste React/day1/node_modules/@parcel/core/test/serializer.test.js1723220400238959767 0
 68/home/dell/Namaste React/day1/node_modules/msgpackr-extract/index.js1723220393094096308 0
 85/home/dell/Namaste React/day1/node_modules/htmlnano/docs/versioned_docs/version-1.1.11723220394250236704 1
-52/home/dell/Namaste React/day1/dist/index.7826abd7.js1723443960069404546 0
+52/home/dell/Namaste React/day1/dist/index.7826abd7.js1723480188528752560 0
 100/home/dell/Namaste React/day1/node_modules/htmlnano/docs/versioned_docs/version-1.1.1/050-modules.md1723220394250236704 0
 65/home/dell/Namaste React/day1/node_modules/css-select/lib/sort.js1723220393022087560 0
 100/home/dell/Namaste React/day1/node_modules/htmlnano/docs/versioned_docs/version-1.1.1/040-presets.md1723220394250236704 0
@@ -5925,7 +5930,7 @@
 64/home/dell/Namaste React/day1/node_modules/base-x/src/index.d.ts1723220394074215357 0
 49/home/dell/Namaste React/day1/node_modules/dotenv1723220394086216812 1
 57/home/dell/Namaste React/day1/node_modules/dotenv/LICENSE1723220394086216812 0
-48/home/dell/Namaste React/day1/node_modules/@lmdb1723441750037699767 1
+48/home/dell/Namaste React/day1/node_modules/@lmdb1723443958636948084 1
 59/home/dell/Namaste React/day1/node_modules/dotenv/README.md1723220394086216812 0
 69/home/dell/Namaste React/day1/node_modules/css-what/lib/es/parse.d.ts1723220392566032072 0
 59/home/dell/Namaste React/day1/node_modules/dotenv/config.js1723220394086216812 0
@@ -5965,8 +5970,3 @@
 95/home/dell/Namaste React/day1/node_modules/@babel/helper-validator-identifier/lib/identifier.js1723220392414013575 0
 63/home/dell/Namaste React/day1/node_modules/weak-lru-cache/tests1723220392654042781 1
 59/home/dell/Namaste React/day1/node_modules/@babel/highlight1723220392454018443 1
-93/home/dell/Namaste React/day1/node_modules/@parcel/transformer-babel/src/remapAstLocations.js1723220397154588259 0
-72/home/dell/Namaste React/day1/node_modules/@babel/highlight/package.json1723220392462019417 0
-71/home/dell/Namaste React/day1/node_modules/@swc/helpers/_/_to_primitive1723220393526148793 1
-72/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules1723220388137491324 1
-94/home/dell/Namaste React/day1/node_modules/@babel/highlight/node_modules/color-convert/LICENSE1723220392454018443 0
