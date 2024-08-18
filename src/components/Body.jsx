@@ -4,7 +4,16 @@ import CardContainer from "./CardContainer";
 const Body = () => {
     return (
       <div className='body'>
-        <div>Search</div>
+        <div className="filter">
+          <button
+          className="filter-btn"
+          onClick={()=>{
+            console.log("button clicked");
+          }}
+          >
+            Top Rated Resturants
+          </button>
+        </div>
         <div className='res-container'>
           <CardContainer
           resName = "Aminia"

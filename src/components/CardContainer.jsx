@@ -1,4 +1,4 @@
-
+import biriyani from './../../assets/biriyani.jpeg'
 
 
 const CardContainer = ({resName,cuisine,time,price}) =>{
