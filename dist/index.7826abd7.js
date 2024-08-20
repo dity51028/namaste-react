@@ -27597,6 +27597,10 @@ const Body = ()=>{
             }
         }
     ]);
+    (0, _react.useEffect)(()=>{
+        console.log("use effect called");
+    }, []);
+    console.log("render");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
@@ -27613,12 +27617,12 @@ const Body = ()=>{
                     children: "Top Rated Resturants"
                 }, void 0, false, {
                     fileName: "src/components/Body.jsx",
-                    lineNumber: 48,
+                    lineNumber: 54,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 47,
+                lineNumber: 53,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27628,23 +27632,23 @@ const Body = ()=>{
                         resData: resturant
                     }, resturant.data.id, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 62,
+                        lineNumber: 68,
                         columnNumber: 13
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 60,
+                lineNumber: 66,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.jsx",
-        lineNumber: 46,
+        lineNumber: 52,
         columnNumber: 7
     }, undefined);
 };
-_s(Body, "cQuenWiCNs1M0elR7Z9FINxt3io=");
+_s(Body, "6h8L4oFZXI/UOuwF11XjDVyXh2c=");
 _c = Body;
 exports.default = Body;
 var _c;

@@ -1,5 +1,5 @@
 import CardContainer from "./CardContainer";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 
 
@@ -41,6 +41,12 @@ const Body = () => {
   
   ]);
 
+  useEffect(() => {
+    console.log('use effect called')
+  }, [])
+
+  console.log("render");
+  
   
     return (
       <div className='body'>
