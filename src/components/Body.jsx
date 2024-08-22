@@ -42,10 +42,20 @@ const Body = () => {
   ]);
 
   useEffect(() => {
-    console.log('use effect called')
-  }, [])
+   fetchData();
+  },[])
 
-  console.log("render");
+  const fetchData = async () =>{
+    const data = await fetch(
+      "https://www.swiggy.com/collections/83631?collection_id=83631&search_context=pizza&tags=layout_CCS_Pizza&type=rcv2"
+      );
+  
+
+  const json = await data.json();
+  console.log(json);
+
+  
+  };
   
   
     return (

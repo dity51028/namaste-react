@@ -27598,9 +27598,13 @@ const Body = ()=>{
         }
     ]);
     (0, _react.useEffect)(()=>{
-        console.log("use effect called");
+        fetchData();
     }, []);
-    console.log("render");
+    const fetchData = async ()=>{
+        const data = await fetch("https://www.swiggy.com/collections/83631?collection_id=83631&search_context=pizza&tags=layout_CCS_Pizza&type=rcv2");
+        const json = await data.json();
+        console.log(json);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
@@ -27617,12 +27621,12 @@ const Body = ()=>{
                     children: "Top Rated Resturants"
                 }, void 0, false, {
                     fileName: "src/components/Body.jsx",
-                    lineNumber: 54,
+                    lineNumber: 64,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 53,
+                lineNumber: 63,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27632,19 +27636,19 @@ const Body = ()=>{
                         resData: resturant
                     }, resturant.data.id, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 68,
+                        lineNumber: 78,
                         columnNumber: 13
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 66,
+                lineNumber: 76,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.jsx",
-        lineNumber: 52,
+        lineNumber: 62,
         columnNumber: 7
     }, undefined);
 };
@@ -27659,7 +27663,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./CardContainer":"h7avO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"h7avO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./CardContainer":"h7avO","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"h7avO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fb58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
