@@ -43,3 +43,15 @@
     background-color: rgb(108, 188, 212);
     cursor: pointer;
 }
+
+.shimmer-class {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(187, 182, 176);
+    border: 1px solid black;
+        margin: 3px;
+}
+.shimmer-container {
+    display: flex;
+    
+}

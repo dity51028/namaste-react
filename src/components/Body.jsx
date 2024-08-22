@@ -1,5 +1,6 @@
 import CardContainer from "./CardContainer";
 import { useState,useEffect } from "react";
+import Shimmer from "./Shimmer";
 
 
 
@@ -38,6 +39,38 @@ const Body = () => {
       avgRating:"4.5"
       }
     },
+    {
+      data:{
+        id:"12348",
+        name:'Express Dhaba',
+        cuisine:["burger","biriyani","snacks"],
+        costForTwo:4000,
+        deliveryTime:36,
+        avgRating:"3.8"
+      }
+    },
+      {
+        data:
+        {
+        id:"12349",
+        name:'Cafe Corner',
+        cuisine:["burger","chicken-wings","snacks"],
+        costForTwo:4500,
+        deliveryTime:36,
+        avgRating:"4.2"
+        }
+      },
+      {
+        data:
+        {
+        id:"12350",
+        name:'Aminia',
+        cuisine:["burger","chicken-wings","snacks"],
+        costForTwo:500,
+        deliveryTime:40,
+        avgRating:"4.5"
+        }
+      },
   
   ]);
 
@@ -53,12 +86,16 @@ const Body = () => {
 
   const json = await data.json();
   console.log(json);
-
   
   };
+   
+  /*conditional rendering*/
+ /* if (listOfResturants.length===0){
+    return <Shimmer/>
+  }*/
   
   
-    return (
+    return ( listOfResturants.length === 0? <Shimmer/> :
       <div className='body'>
         <div className="filter">
           <button
@@ -73,6 +110,7 @@ const Body = () => {
             Top Rated Resturants
           </button>
         </div>
+        
         <div className='res-container'>
           {listOfResturants.map((resturant)=>{
             <CardContainer key={resturant.data.id} resData={resturant}/>
