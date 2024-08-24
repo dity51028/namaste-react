@@ -27345,7 +27345,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./../../assets/logo.png":"kRPTR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"kRPTR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./../../assets/logo.png":"kRPTR","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kRPTR":[function(require,module,exports) {
 module.exports = require("ed31f8490754b7f8").getBundleURL("lly8x") + "logo.f0c67fd0.png" + "?" + Date.now();
 
 },{"ed31f8490754b7f8":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -27569,107 +27569,19 @@ var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
-    const [listOfResturants, setListOfResturants] = (0, _react.useState)([
-        {
-            data: {
-                id: "12345",
-                name: "KFC",
-                cuisine: [
-                    "burger",
-                    "biriyani",
-                    "snacks"
-                ],
-                costForTwo: 4000,
-                deliveryTime: 36,
-                avgRating: "3.8"
-            }
-        },
-        {
-            data: {
-                id: "12346",
-                name: "Dominos",
-                cuisine: [
-                    "burger",
-                    "chicken-wings",
-                    "snacks"
-                ],
-                costForTwo: 4500,
-                deliveryTime: 36,
-                avgRating: "4.2"
-            }
-        },
-        {
-            data: {
-                id: "12347",
-                name: "MCD",
-                cuisine: [
-                    "burger",
-                    "chicken-wings",
-                    "snacks"
-                ],
-                costForTwo: 500,
-                deliveryTime: 40,
-                avgRating: "4.5"
-            }
-        },
-        {
-            data: {
-                id: "12348",
-                name: "Express Dhaba",
-                cuisine: [
-                    "burger",
-                    "biriyani",
-                    "snacks"
-                ],
-                costForTwo: 4000,
-                deliveryTime: 36,
-                avgRating: "3.8"
-            }
-        },
-        {
-            data: {
-                id: "12349",
-                name: "Cafe Corner",
-                cuisine: [
-                    "burger",
-                    "chicken-wings",
-                    "snacks"
-                ],
-                costForTwo: 4500,
-                deliveryTime: 36,
-                avgRating: "4.2"
-            }
-        },
-        {
-            data: {
-                id: "12350",
-                name: "Aminia",
-                cuisine: [
-                    "burger",
-                    "chicken-wings",
-                    "snacks"
-                ],
-                costForTwo: 500,
-                deliveryTime: 40,
-                avgRating: "4.5"
-            }
-        }
-    ]);
+    const [listOfResturants, setListOfResturants] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         fetchData();
     }, []);
     const fetchData = async ()=>{
-        const data = await fetch("https://www.swiggy.com/collections/83631?collection_id=83631&search_context=pizza&tags=layout_CCS_Pizza&type=rcv2");
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.486463086305346&lng=78.3657343313098&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
-        console.log(json);
+        console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+        setListOfResturants(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
     };
     /*conditional rendering*/ /* if (listOfResturants.length===0){
     return <Shimmer/>
-  }*/ return listOfResturants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-        fileName: "src/components/Body.jsx",
-        lineNumber: 98,
-        columnNumber: 45
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+  }*/ return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27678,45 +27590,45 @@ const Body = ()=>{
                     className: "filter-btn",
                     onClick: ()=>{
                         console.log("button clicked");
-                        filteredList = listOfResturants.filter((res)=>res.data.avgRating > 4);
+                        filteredList = listOfResturants.filter((res)=>res.info.avgRating > 4);
                         console.log(filteredList);
                         setListOfResturants(filteredList);
                     },
                     children: "Top Rated Resturants"
                 }, void 0, false, {
                     fileName: "src/components/Body.jsx",
-                    lineNumber: 101,
+                    lineNumber: 36,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 100,
+                lineNumber: 35,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
                 children: listOfResturants.map((resturant)=>{
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardContainerDefault.default), {
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardContainerDefault.default), {
                         resData: resturant
-                    }, resturant.data.id, false, {
+                    }, resturant.info.id, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 116,
-                        columnNumber: 13
+                        lineNumber: 51,
+                        columnNumber: 20
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 114,
+                lineNumber: 49,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.jsx",
-        lineNumber: 99,
+        lineNumber: 34,
         columnNumber: 7
     }, undefined);
 };
-_s(Body, "O0q+9fJAHkePW9I6JJefkqw9q0s=");
+_s(Body, "n0GiNSN0IE6/JAoNK0U4ld+/60Y=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -27727,7 +27639,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./CardContainer":"h7avO","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"imnNo"}],"h7avO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./CardContainer":"h7avO","react":"21dqq","./Shimmer":"imnNo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"h7avO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fb58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27739,62 +27651,66 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _biriyaniJpeg = require("./../../assets/biriyani.jpeg");
 var _biriyaniJpegDefault = parcelHelpers.interopDefault(_biriyaniJpeg);
+var _constants = require("../utils/constants");
 const CardContainer = (props)=>{
-    const { resdata } = props;
-    const { name, avgRating, cuisine, costForTwo, deliveryTime } = resdata?.data;
+    const { resData } = props;
+    const { name, avgRating, cuisines, costForTwo, cloudinaryImageId, sla } = resData?.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "img",
-                src: (0, _biriyaniJpegDefault.default)
-            }, void 0, false, {
-                fileName: "src/components/CardContainer.jsx",
-                lineNumber: 17,
-                columnNumber: 11
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: name
-            }, void 0, false, {
-                fileName: "src/components/CardContainer.jsx",
-                lineNumber: 18,
-                columnNumber: 11
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: cuisine
+                src: (0, _constants.CDN_URL) + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/CardContainer.jsx",
                 lineNumber: 19,
                 columnNumber: 11
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
-                children: deliveryTime
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: name
             }, void 0, false, {
                 fileName: "src/components/CardContainer.jsx",
                 lineNumber: 20,
                 columnNumber: 11
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
-                children: [
-                    costForTwo / 100,
-                    " for two"
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: cuisines.join(",")
+            }, void 0, false, {
                 fileName: "src/components/CardContainer.jsx",
                 lineNumber: 21,
                 columnNumber: 11
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
-                children: avgRating
+                children: sla.slaString
             }, void 0, false, {
                 fileName: "src/components/CardContainer.jsx",
                 lineNumber: 22,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    costForTwo,
+                    " for two"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CardContainer.jsx",
+                lineNumber: 23,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    avgRating,
+                    " stars"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CardContainer.jsx",
+                lineNumber: 24,
                 columnNumber: 11
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/CardContainer.jsx",
-        lineNumber: 15,
+        lineNumber: 17,
         columnNumber: 7
     }, undefined);
 };
@@ -27808,10 +27724,16 @@ $RefreshReg$(_c, "CardContainer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./../../assets/biriyani.jpeg":"19qTO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"19qTO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./../../assets/biriyani.jpeg":"19qTO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constants":"hB8jg"}],"19qTO":[function(require,module,exports) {
 module.exports = require("3ab7fd3bf3d658d7").getBundleURL("lly8x") + "biriyani.3a06bcb7.jpeg" + "?" + Date.now();
 
-},{"3ab7fd3bf3d658d7":"lgJ39"}],"imnNo":[function(require,module,exports) {
+},{"3ab7fd3bf3d658d7":"lgJ39"}],"hB8jg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
+const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"imnNo":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0b57 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27821,6 +27743,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _indexCss = require("../../index.css");
 const Shimmer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "shimmer-container",
@@ -27872,6 +27795,6 @@ $RefreshReg$(_c, "Shimmer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["APLPM","1xC6H","2Ew96"], "2Ew96", "parcelRequire082a")
+},{"react/jsx-dev-runtime":"iTorj","../../index.css":"giGSC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"giGSC":[function() {},{}]},["APLPM","1xC6H","2Ew96"], "2Ew96", "parcelRequire082a")
 
 //# sourceMappingURL=index.7826abd7.js.map

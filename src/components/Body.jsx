@@ -6,73 +6,7 @@ import Shimmer from "./Shimmer";
 
 const Body = () => {
 
-  const [listOfResturants,setListOfResturants] = useState([
-    {
-    data:{
-      id:"12345",
-      name:'KFC',
-      cuisine:["burger","biriyani","snacks"],
-      costForTwo:4000,
-      deliveryTime:36,
-      avgRating:"3.8"
-    }
-  },
-    {
-      data:
-      {
-      id:"12346",
-      name:'Dominos',
-      cuisine:["burger","chicken-wings","snacks"],
-      costForTwo:4500,
-      deliveryTime:36,
-      avgRating:"4.2"
-      }
-    },
-    {
-      data:
-      {
-      id:"12347",
-      name:'MCD',
-      cuisine:["burger","chicken-wings","snacks"],
-      costForTwo:500,
-      deliveryTime:40,
-      avgRating:"4.5"
-      }
-    },
-    {
-      data:{
-        id:"12348",
-        name:'Express Dhaba',
-        cuisine:["burger","biriyani","snacks"],
-        costForTwo:4000,
-        deliveryTime:36,
-        avgRating:"3.8"
-      }
-    },
-      {
-        data:
-        {
-        id:"12349",
-        name:'Cafe Corner',
-        cuisine:["burger","chicken-wings","snacks"],
-        costForTwo:4500,
-        deliveryTime:36,
-        avgRating:"4.2"
-        }
-      },
-      {
-        data:
-        {
-        id:"12350",
-        name:'Aminia',
-        cuisine:["burger","chicken-wings","snacks"],
-        costForTwo:500,
-        deliveryTime:40,
-        avgRating:"4.5"
-        }
-      },
-  
-  ]);
+  const [listOfResturants,setListOfResturants] = useState([]);
 
   useEffect(() => {
    fetchData();
@@ -80,12 +14,13 @@ const Body = () => {
 
   const fetchData = async () =>{
     const data = await fetch(
-      "https://www.swiggy.com/collections/83631?collection_id=83631&search_context=pizza&tags=layout_CCS_Pizza&type=rcv2"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.486463086305346&lng=78.3657343313098&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       );
   
 
   const json = await data.json();
-  console.log(json);
+  console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+  setListOfResturants(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
   
   };
    
@@ -95,14 +30,14 @@ const Body = () => {
   }*/
   
   
-    return ( listOfResturants.length === 0? <Shimmer/> :
+    return ( 
       <div className='body'>
         <div className="filter">
           <button
           className="filter-btn"
           onClick={()=>{
             console.log("button clicked");
-            filteredList = listOfResturants.filter(res=>res.data.avgRating>4)
+            filteredList = listOfResturants.filter(res=>res.info.avgRating>4)
             console.log(filteredList);
             setListOfResturants(filteredList)
           }}
@@ -113,7 +48,7 @@ const Body = () => {
         
         <div className='res-container'>
           {listOfResturants.map((resturant)=>{
-            <CardContainer key={resturant.data.id} resData={resturant}/>
+            return <CardContainer key={resturant.info.id} resData={resturant}/>
           })}
         
         </div>

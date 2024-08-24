@@ -1,25 +1,28 @@
 import biriyani from './../../assets/biriyani.jpeg'
-
+import { CDN_URL } from '../utils/constants';
 
 const CardContainer = (props) =>{
-  const {resdata} = props;
+ const {resData} = props;
+
   const {
     name,
     avgRating,
-    cuisine,
+    cuisines,
     costForTwo,
-    deliveryTime,
+    cloudinaryImageId,
+    sla,
 
-  } = resdata?.data
+  } = resData?.info;
     return(
       <div className='card-container'>
         
-          <img className='img' src={biriyani}/>
-          <h3>{name}</h3>
-          <h4>{cuisine}</h4>
-          <h6>{deliveryTime}</h6>
-          <h6>{costForTwo/100} for two</h6>
-          <h6>{avgRating}</h6>
+          <img className='img' src={CDN_URL+cloudinaryImageId}/>
+          <h4>{name}</h4>
+          <h4>{cuisines.join(",")}</h4>
+          <h6>{sla.slaString}</h6>
+          <h4>{costForTwo} for two</h4>
+          <h4>{avgRating} stars</h4>
+          
         
       </div>
     )

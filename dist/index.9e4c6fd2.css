@@ -1,3 +1,15 @@
+.shimmer-class {
+  background-color: #bbb6b0;
+  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
+  margin: 3px;
+}
+
+.shimmer-container {
+  display: flex;
+}
+
 .header {
   border: 1px solid #000;
   justify-content: space-between;
@@ -45,17 +57,5 @@
   background-color: #6cbcd4;
   margin: 10px;
   padding: 10px;
-}
-
-.shimmer-class {
-  background-color: #bbb6b0;
-  border: 1px solid #000;
-  width: 200px;
-  height: 200px;
-  margin: 3px;
-}
-
-.shimmer-container {
-  display: flex;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

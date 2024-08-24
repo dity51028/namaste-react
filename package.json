@@ -5,6 +5,7 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
+    "dev" : "npm run build && npm run start",
     "test": "jest"
   },
   "repository": {
