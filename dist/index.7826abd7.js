@@ -27570,6 +27570,8 @@ var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
     const [listOfResturants, setListOfResturants] = (0, _react.useState)([]);
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    const [filterRes, setFilterRes] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         fetchData();
     }, []);
@@ -27578,57 +27580,95 @@ const Body = ()=>{
         const json = await data.json();
         console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
         setListOfResturants(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+        setFilterRes(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
     };
     /*conditional rendering*/ /* if (listOfResturants.length===0){
     return <Shimmer/>
-  }*/ return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+  }*/ console.log(searchText);
+    return listOfResturants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/Body.jsx",
+        lineNumber: 35,
+        columnNumber: 42
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "filter",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "filter-btn",
-                    onClick: ()=>{
-                        console.log("button clicked");
-                        filteredList = listOfResturants.filter((res)=>res.info.avgRating > 4);
-                        console.log(filteredList);
-                        setListOfResturants(filteredList);
-                    },
-                    children: "Top Rated Resturants"
-                }, void 0, false, {
-                    fileName: "src/components/Body.jsx",
-                    lineNumber: 36,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "search",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                className: "search-box",
+                                value: searchText,
+                                onChange: (e)=>setSearchText(e.target.value)
+                            }, void 0, false, {
+                                fileName: "src/components/Body.jsx",
+                                lineNumber: 39,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                onClick: ()=>{
+                                    const filteredList1 = listOfResturants.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                                    setFilterRes(filteredList1);
+                                },
+                                children: "Search"
+                            }, void 0, false, {
+                                fileName: "src/components/Body.jsx",
+                                lineNumber: 48,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Body.jsx",
+                        lineNumber: 38,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "filter-btn",
+                        onClick: ()=>{
+                            console.log("button clicked");
+                            filteredList = listOfResturants.filter((res)=>res.info.avgRating > 4);
+                            console.log(filteredList);
+                            setListOfResturants(filteredList);
+                        },
+                        children: "Top Rated Resturants"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.jsx",
+                        lineNumber: 61,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 35,
+                lineNumber: 37,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: listOfResturants.map((resturant)=>{
+                children: filterRes.map((resturant)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardContainerDefault.default), {
                         resData: resturant
                     }, resturant.info.id, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 51,
+                        lineNumber: 76,
                         columnNumber: 20
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 49,
+                lineNumber: 74,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.jsx",
-        lineNumber: 34,
+        lineNumber: 36,
         columnNumber: 7
     }, undefined);
 };
-_s(Body, "n0GiNSN0IE6/JAoNK0U4ld+/60Y=");
+_s(Body, "teNHSa5Mcd5woOj+by+Rk/8CgTE=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -27660,7 +27700,8 @@ const CardContainer = (props)=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "img",
-                src: (0, _constants.CDN_URL) + cloudinaryImageId
+                src: (0, _constants.CDN_URL) + cloudinaryImageId,
+                height: 200
             }, void 0, false, {
                 fileName: "src/components/CardContainer.jsx",
                 lineNumber: 19,
@@ -27724,7 +27765,7 @@ $RefreshReg$(_c, "CardContainer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./../../assets/biriyani.jpeg":"19qTO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constants":"hB8jg"}],"19qTO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./../../assets/biriyani.jpeg":"19qTO","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"19qTO":[function(require,module,exports) {
 module.exports = require("3ab7fd3bf3d658d7").getBundleURL("lly8x") + "biriyani.3a06bcb7.jpeg" + "?" + Date.now();
 
 },{"3ab7fd3bf3d658d7":"lgJ39"}],"hB8jg":[function(require,module,exports) {
@@ -27749,16 +27790,14 @@ const Shimmer = ()=>{
         className: "shimmer-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-class",
-                children: "cards"
+                className: "shimmer-class"
             }, void 0, false, {
                 fileName: "src/components/Shimmer.jsx",
                 lineNumber: 6,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-class",
-                children: "cards"
+                className: "shimmer-class"
             }, void 0, false, {
                 fileName: "src/components/Shimmer.jsx",
                 lineNumber: 7,
@@ -27776,6 +27815,90 @@ const Shimmer = ()=>{
             }, void 0, false, {
                 fileName: "src/components/Shimmer.jsx",
                 lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 13,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 16,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 17,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 18,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 19,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 20,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-class"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 21,
                 columnNumber: 13
             }, undefined)
         ]

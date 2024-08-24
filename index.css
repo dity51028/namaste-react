@@ -38,21 +38,21 @@
 }
 
 .filter-btn{
-    margin: 10px;
-    padding: 10px;
+    margin-left: 10px;
     background-color: rgb(108, 188, 212);
     cursor: pointer;
 }
 
 .shimmer-class {
-    height: 200px;
+    height: 450px;
     width: 200px;
-    background-color: rgb(187, 182, 176);
-    border: 1px solid black;
-        margin: 3px;
+    background-color: #f0f0f0;
+   
+     margin: 3px;
 }
 .shimmer-container {
     display: flex;
+    flex-wrap: wrap;
 }  
 .header{
     display: flex;
@@ -80,11 +80,12 @@
     padding: 5px;
     width: 200px;
     height: 500px;
-    border: 1px solid black;
+    border: 1px solid rgb(192, 186, 186);
+    background-color: #f0f0f0;
 }
 
 .card-container:hover{
-    background-color: rgb(197, 205, 205);
+    background-color: rgb(225, 236, 236);
     cursor: pointer;
 }
 
@@ -94,8 +95,10 @@
 }
 
 .filter-btn{
-    margin: 10px;
-    padding: 10px;
     background-color: rgb(108, 188, 212);
     cursor: pointer;
+}
+.filter{
+    display: flex;
+    margin: 10px;
 }

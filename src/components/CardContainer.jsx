@@ -16,7 +16,7 @@ const CardContainer = (props) =>{
     return(
       <div className='card-container'>
         
-          <img className='img' src={CDN_URL+cloudinaryImageId}/>
+          <img className='img' src={CDN_URL+cloudinaryImageId} height={200}/>
           <h4>{name}</h4>
           <h4>{cuisines.join(",")}</h4>
           <h6>{sla.slaString}</h6>

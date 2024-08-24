@@ -1,12 +1,26 @@
-.shimmer-class {
-  background-color: #bbb6b0;
+.card-container {
   border: 1px solid #000;
   width: 200px;
-  height: 200px;
+  height: 500px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.filter-btn {
+  cursor: pointer;
+  background-color: #6cbcd4;
+  margin-left: 10px;
+}
+
+.shimmer-class {
+  background-color: #f0f0f0;
+  width: 200px;
+  height: 450px;
   margin: 3px;
 }
 
 .shimmer-container {
+  flex-wrap: wrap;
   display: flex;
 }
 
@@ -36,7 +50,8 @@
 }
 
 .card-container {
-  border: 1px solid #000;
+  background-color: #f0f0f0;
+  border: 1px solid #c0baba;
   width: 200px;
   height: 500px;
   margin: 5px;
@@ -45,7 +60,7 @@
 
 .card-container:hover {
   cursor: pointer;
-  background-color: #c5cdcd;
+  background-color: #e1ecec;
 }
 
 .img {
@@ -55,7 +70,10 @@
 .filter-btn {
   cursor: pointer;
   background-color: #6cbcd4;
+}
+
+.filter {
   margin: 10px;
-  padding: 10px;
+  display: flex;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
