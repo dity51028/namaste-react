@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import Shimmer from './Shimmer';
 import { CDN_URL,MENU_API } from '../utils/constants';
 import { useParams } from 'react-router-dom';
@@ -26,9 +26,9 @@ const RestaurantMenu = () => {
 
     const {name,cuisines,avgRating,costForTwoMessage,cloudinaryImageId} = resMenu?.cards[2]?.card?.card?.info;
 
-    const {carousel} = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1].card.card;
+    const {itemCards} = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1].card.card;
      
-    console.log(carousel);
+    console.log(itemCards);
     console.log(resMenu?.cards);
     console.log(resMenu?.cards[4]?.groupedCard);
     console.log(resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
@@ -43,14 +43,14 @@ const RestaurantMenu = () => {
         <h3><span>{avgRating}</span>stars ---- <span>{costForTwoMessage}</span></h3>
         <h2>Menu</h2>
         <ul>
-            {carousel?.map(item=>
+            {itemCards?.map(item=>
             {
-            return <>
-            <li><h2>{item.dish.info.name}</h2> </li> 
-            <h4>{item.dish.info.description}</h4>
-            <h5>{item.dish.info.category}</h5>
-            <h5>Price : {(item.dish.info.price/100)}</h5>
-            </>
+            return <Fragment key={item.card.info.id}>
+            <li>{item.card.info.name} </li> 
+            <h4>{item.card.info.description}</h4>
+            <h5>{item.card.info.category}</h5>
+            <h5>Price : {(item.card.info.price/100)}</h5>
+            </Fragment>
             }
             )}
         </ul>

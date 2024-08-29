@@ -35314,8 +35314,8 @@ const RestaurantMenu = ()=>{
         columnNumber: 33
     }, undefined);
     const { name, cuisines, avgRating, costForTwoMessage, cloudinaryImageId } = resMenu?.cards[2]?.card?.card?.info;
-    const { carousel } = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1].card.card;
-    console.log(carousel);
+    const { itemCards } = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1].card.card;
+    console.log(itemCards);
     console.log(resMenu?.cards);
     console.log(resMenu?.cards[4]?.groupedCard);
     console.log(resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
@@ -35376,18 +35376,12 @@ const RestaurantMenu = ()=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                children: carousel?.map((item)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                children: itemCards?.map((item)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                        children: item.dish.info.name
-                                    }, void 0, false, {
-                                        fileName: "src/components/RestaurantMenu.jsx",
-                                        lineNumber: 49,
-                                        columnNumber: 17
-                                    }, undefined),
+                                    item.card.info.name,
                                     " "
                                 ]
                             }, void 0, true, {
@@ -35396,14 +35390,14 @@ const RestaurantMenu = ()=>{
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                children: item.dish.info.description
+                                children: item.card.info.description
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantMenu.jsx",
                                 lineNumber: 50,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                                children: item.dish.info.category
+                                children: item.card.info.category
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantMenu.jsx",
                                 lineNumber: 51,
@@ -35412,7 +35406,7 @@ const RestaurantMenu = ()=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
                                 children: [
                                     "Price : ",
-                                    item.dish.info.price / 100
+                                    item.card.info.price / 100
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/RestaurantMenu.jsx",
@@ -35420,7 +35414,11 @@ const RestaurantMenu = ()=>{
                                 columnNumber: 13
                             }, undefined)
                         ]
-                    }, void 0, true);
+                    }, item.card.info.id, true, {
+                        fileName: "src/components/RestaurantMenu.jsx",
+                        lineNumber: 48,
+                        columnNumber: 20
+                    }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/RestaurantMenu.jsx",
