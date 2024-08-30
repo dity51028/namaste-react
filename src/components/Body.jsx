@@ -2,6 +2,7 @@ import CardContainer from "./CardContainer";
 import { useState,useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useSatus from "../utils/useStatus";
 
 
 
@@ -32,7 +33,9 @@ const Body = () => {
     return <Shimmer/>
   }*/
   
-   console.log(searchText);
+   const onlineSts = useSatus();
+   if(onlineSts === false) return <h1>You're offline!!! PLease check your connection</h1>
+
     return listOfResturants.length===0 ? <Shimmer/> : ( 
       <div className='body'>
         <div className="filter">

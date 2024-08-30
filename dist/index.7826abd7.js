@@ -34774,6 +34774,8 @@ var _react = require("react");
 var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _reactRouterDom = require("react-router-dom");
+var _useStatus = require("../utils/useStatus");
+var _useStatusDefault = parcelHelpers.interopDefault(_useStatus);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
@@ -34792,10 +34794,17 @@ const Body = ()=>{
     };
     /*conditional rendering*/ /* if (listOfResturants.length===0){
     return <Shimmer/>
-  }*/ console.log(searchText);
+  }*/ const onlineSts = (0, _useStatusDefault.default)();
+    if (onlineSts === false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "You're offline!!! PLease check your connection"
+    }, void 0, false, {
+        fileName: "src/components/Body.jsx",
+        lineNumber: 37,
+        columnNumber: 35
+    }, undefined);
     return listOfResturants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.jsx",
-        lineNumber: 36,
+        lineNumber: 39,
         columnNumber: 42
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -34813,7 +34822,7 @@ const Body = ()=>{
                                 onChange: (e)=>setSearchText(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/components/Body.jsx",
-                                lineNumber: 40,
+                                lineNumber: 43,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34824,13 +34833,13 @@ const Body = ()=>{
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "src/components/Body.jsx",
-                                lineNumber: 49,
+                                lineNumber: 52,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 39,
+                        lineNumber: 42,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34844,13 +34853,13 @@ const Body = ()=>{
                         children: "Top Rated Resturants"
                     }, void 0, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 62,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 38,
+                lineNumber: 41,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34864,29 +34873,33 @@ const Body = ()=>{
                                 resData: resturant
                             }, void 0, false, {
                                 fileName: "src/components/Body.jsx",
-                                lineNumber: 79,
+                                lineNumber: 82,
                                 columnNumber: 52
                             }, undefined)
                         ]
                     }, resturant.info.id, true, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 77,
+                        lineNumber: 80,
                         columnNumber: 20
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 75,
+                lineNumber: 78,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.jsx",
-        lineNumber: 37,
+        lineNumber: 40,
         columnNumber: 7
     }, undefined);
 };
-_s(Body, "teNHSa5Mcd5woOj+by+Rk/8CgTE=");
+_s(Body, "meUtpssWI12a1y0dzJQ5qscKXsI=", false, function() {
+    return [
+        (0, _useStatusDefault.default)
+    ];
+});
 _c = Body;
 exports.default = Body;
 var _c;
@@ -34897,7 +34910,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./CardContainer":"h7avO","react":"21dqq","./Shimmer":"imnNo","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"h7avO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./CardContainer":"h7avO","react":"21dqq","./Shimmer":"imnNo","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/useStatus":"cxctO"}],"h7avO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fb58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35138,7 +35151,39 @@ $RefreshReg$(_c, "Shimmer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../../index.css":"giGSC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"giGSC":[function() {},{}],"hkKyJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../index.css":"giGSC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"giGSC":[function() {},{}],"cxctO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9365 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9365.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const useSatus = ()=>{
+    _s();
+    const [chkStatus, setChkStatus] = (0, _react.useState)(true);
+    (0, _react.useEffect)(()=>{
+        window.addEventListener("online", (e)=>{
+            setChkStatus(true);
+        });
+        window.addEventListener("offline", ()=>{
+            setChkStatus(false);
+        });
+    }, []);
+    return chkStatus;
+};
+_s(useSatus, "aF1opyoIu9lL49MgGXZrbqBDrA4=");
+exports.default = useSatus;
+
+  $parcel$ReactRefreshHelpers$9365.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hkKyJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$42ed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
