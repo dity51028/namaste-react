@@ -1,27 +1,18 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment } from 'react'
 import Shimmer from './Shimmer';
-import { CDN_URL,MENU_API } from '../utils/constants';
+import { CDN_URL } from '../utils/constants';
 import { useParams } from 'react-router-dom';
+import useResData from '../utils/useResData';
 
 const RestaurantMenu = () => {
 
-    const [resMenu,setResMenu]=useState(null)
+  
 
     const {resId} = useParams();
+    const resMenu = useResData(resId);
 
 
-    useEffect(()=>{
-        fetchMenu();
-
-    },[])
-
-    const fetchMenu = async ()=>{
-        const data = await fetch(MENU_API+resId)
-        const json =await data.json();
-       
-        setResMenu(json.data)
-
-    };
+   
     if(resMenu === null) return <Shimmer/>;
 
     const {name,cuisines,avgRating,costForTwoMessage,cloudinaryImageId} = resMenu?.cards[2]?.card?.card?.info;
