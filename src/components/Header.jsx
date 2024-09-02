@@ -8,20 +8,20 @@ const Header = () => {
   const onlineSts = useSatus();
   
     return (
-      <div className='header'>
-        <div>
-          <img className='logo' 
+      <div className='flex justify-between w-full h-28 bg-pink-200 shadow-lg'>
+        <div >
+          <img className='w-48 rounded-full' 
           src={logo}/>
         </div>
-        <div className='nav-items'>
-          <ul>
-            <li>Online Status : {onlineSts?"✅":"🔴"}</li>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About</Link></li>
-            <li><Link to='/grocery'>Grocery</Link></li>
-            <li><Link to='contact'>Contact Us</Link></li>
-            <li>Cart</li>
-            <button className="login" 
+        <div className='flex items-center'>
+          <ul className='flex text-purple-700'>
+            <li className='pr-4 bg-pink-400 rounded-full flex justify-center text-pink-900'>Online Status : {onlineSts?"✅":"🔴"}</li>
+            <li className='px-4'><Link to='/'>Home</Link></li>
+            <li className='pr-4'><Link to='/about'>About</Link></li>
+            <li className='pr-4'><Link to='/grocery'>Grocery</Link></li>
+            <li className='pr-4'><Link to='contact'>Contact Us</Link></li>
+            <li className='pr-4'>Cart</li>
+            <button className='pr-4' 
             onClick={()=>state === 'Login'? 
             setstate('Logout') : 
             setstate('Login')}>

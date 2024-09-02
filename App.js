@@ -9,9 +9,6 @@ import Error from './src/components/Error.jsx';
 import RestaurantMenu from './src/components/RestaurantMenu.jsx';
 import Shimmer from './src/components/Shimmer.jsx';
 
-
-
-
 const Grocery = lazy(() => import('./src/components/Grocery.jsx'))
 
 const AppALayout = () => {
