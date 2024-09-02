@@ -13,7 +13,7 @@ const CardContainer = (props) =>{
 
   } = resData?.info;
     return(
-      <div className='m-4 p-4 w-[250px] bg-slate-300 rounded-lg'>
+      <div className='m-4 p-4 w-[250px] bg-slate-300 rounded-lg hover:bg-slate-600 hover:text-yellow-50 shadow-xl '>
         
           <img className='img rounded-lg h-[200px] w-full' src={CDN_URL+cloudinaryImageId} />
           <h4 className='font-bold px-8 py-2'>{name}</h4>
