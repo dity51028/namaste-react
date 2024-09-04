@@ -12,6 +12,8 @@ const Body = () => {
   const [searchText,setSearchText] = useState("");
   const [filterRes, setFilterRes] = useState ([])
 
+  console.log(listOfResturants);
+
   useEffect(() => {
    fetchData();
   },[])
@@ -82,7 +84,8 @@ const Body = () => {
           {filterRes.map((resturant)=>{
             return <Link 
             key={resturant.info.id}
-            to={'/restaurant/'+resturant.info.id}> <CardContainer  resData={resturant}/></Link>
+            to={'/restaurant/'+resturant.info.id}> 
+            <CardContainer  resData={resturant}/></Link>
           })}
         
         </div>

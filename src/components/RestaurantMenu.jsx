@@ -3,6 +3,8 @@ import Shimmer from './Shimmer';
 import { CDN_URL,MENU_IMG_URL } from '../utils/constants';
 import { useParams } from 'react-router-dom';
 import useResData from '../utils/useResData';
+import RestaurantCategory from './RestaurantCategory';
+
 
 const RestaurantMenu = () => {
 
@@ -19,14 +21,17 @@ const RestaurantMenu = () => {
 
     const {itemCards} = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1].card.card;
      
+    const category = resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter
+    (c => c.card?.card?.["@type"]==='type.googleapis.com/swiggy.presentation.food.v2.ItemCategory')
     
-
+    console.log(category);
    
    
   return (
     <div className='bg-yellow-50'>
-    <div className='my-8 mx-8 '>
-        <img src={CDN_URL+cloudinaryImageId} alt="" className='w-[250px] h-[250px]  rounded-lg' />
+    <div className='w-1/2 mx-auto '>
+    <div className='my-8'>
+        <img src={CDN_URL+cloudinaryImageId} alt="" className='w-[250px] h-[250px] rounded-lg' />
         <div className='border border-blue-800 p-4 my-4 w-1/2 rounded-lg shadow-2xl'>
         <h1 className='text-6xl text-blue-900 my-4'>{name}</h1>
         <h2 className='font-semibold text-lg'>{cuisines.join(", ")}</h2>
@@ -34,31 +39,16 @@ const RestaurantMenu = () => {
         <h2 className='text-2xl font-bold text-red-900'>Menu :</h2>
         </div>
         
-        <ul >
-            {itemCards?.map(item=>
-            {
-            return <div className='bg-slate-200 w-1/2'  key={item.card.info.id}>
-            
-            <li className='my-8 p-4 bg-slate-500 text-white font-bold text-xl'>{item.card.info.name} </li> 
-            <div className='flex'>
-            
-            <div>
-            <h4 className='p-2'>{item.card.info.description}</h4>
-            <h5 className='p-2'>{item.card.info.category}</h5>
-            <h5 className='p-2'>Price : Rs. {(item.card.info.price/100)} /-</h5>
-            </div>
-            <div className='py-2'>
-            <img className='w-[250px] h-[150px] p-4' src={MENU_IMG_URL+item.card.info.imageId} alt="Menu_Img" />
-            <button className='bg-white w-[80px] h-[40px] mx-6 rounded-lg hover:bg-slate-300'>Add</button>
-            </div>
-            </div>
-            
-            
-            </div>
-            }
-            )}
-        </ul>
         
+        
+    </div>
+         {
+            category.map((category,index)=>{
+              return <RestaurantCategory key={index} category={category?.card?.card}/>
+
+            })
+          }
+         
     </div>
     </div>
   )
